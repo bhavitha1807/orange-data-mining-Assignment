@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<scheme version="2.0" title="Practical 8 - K-Means Clustering (Iris)" description="Starter template. Open in Orange Canvas and verify widget names/connections for your installed version. Dataset: ../datasets/iris.csv">
+  <nodes>
+    <node id="1" name="File" qualified_name="orange.widgets.data.File.File" title="File" position="80,180" />
+    <node id="2" name="K-Means" qualified_name="orange.widgets.data.K-Means.K-Means" title="K-Means" position="260,180" />
+    <node id="3" name="Scatter Plot" qualified_name="orange.widgets.data.ScatterPlot.ScatterPlot" title="Scatter Plot" position="440,180" />
+    <node id="4" name="Silhouette Plot" qualified_name="orange.widgets.data.SilhouettePlot.SilhouettePlot" title="Silhouette Plot" position="620,180" />
+  </nodes>
+  <links>
+    <link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="2" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="3" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+  </links>
+  <annotations>
+    <text id="1" rect="50,40,900,60" font="" anchor="start">Practical 8: K-Means Clustering (Iris). Load iris.csv; verify each widget and connections in Orange.</text>
+  </annotations>
+  <thumbnail />
+  <node_properties />
+</scheme>
